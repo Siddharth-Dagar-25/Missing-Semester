@@ -1,10 +1,13 @@
-Create a new directory called missing under /tmp.
+#Solutions of Lecture -01
 
-Solution: We can use mkdir /tmp/missing or mkdir -p /tmp/missing.
+###
+1. **Create a new directory called missing under /tmp.**
 
-Look up the touch program. The man program is your friend.
+Solution: We can use mkdir ```/tmp/missing``` 
 
-Solution: We can use man touch or tldr touch.
+2. **Look up the touch program. The man program is your friend.**
+
+Solution: We can use ```man touch``` or ```tldr touch```.
 
 Use touch to create a new file called semester in missing.
 
