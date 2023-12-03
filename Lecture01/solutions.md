@@ -17,12 +17,14 @@
 
     ```bash
     cd /tmp/missing
-    touch semester```
+    touch semester
+    ```
 
     Or using a single comand.
 
     ```bash
-    touch /tmp/missing/semester```
+    touch /tmp/missing/semester
+    ```
 
 4. **Write the following into that file, one line at a time:**
 
