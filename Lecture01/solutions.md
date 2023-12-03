@@ -28,26 +28,37 @@
 
 4. **Write the following into that file, one line at a time:**
 
-#!/bin/sh
-curl --head --silent https://missing.csail.mit.edu
-The first line might be tricky to get working. It's helpful to know that # starts a comment in Bash, and ! has a special meaning even within double-quoted (") strings. Bash treats single-quoted strings (') differently: they will do the trick in this case. See the Bash quoting manual page for more information.
+    ```bash
+    #!/bin/sh
+    curl --head --silent https://missing.csail.mit.edu
+    The first line might be tricky to get working. It's helpful to know that # starts a comment in Bash, and ! has a special meaning even within double-quoted (") strings. Bash treats single-quoted strings (') differently: they will do the trick in this case. See the Bash quoting manual page for more information.
+    ```
 
-Solution:
+    Solution:
 
-Run the following commands in your terminal.
+    Run the following commands in your terminal.
 
-echo '#!/bin/sh' > semester
-echo 'curl --head --silent https://missing.csail.mit.edu' >> semester
-Try to execute the file, i.e. type the path to the script (./semester) into your shell and press enter. Understand why it doesn't work by consulting the output of ls (hint: look at the permission bits of the file).
+    ```bash
+    echo '#!/bin/sh' > semester
+    echo 'curl --head --silent https://missing.csail.mit.edu' >> semester
+    ```
 
-Solution:
+5. **Try to execute the file, i.e. type the path to the script (./semester) into your shell and press enter. Understand why it doesn't work by consulting the output of ls (hint: look at the permission bits of the file).**
 
-Run the following commands in your terminal.
+    Solution:
 
-./semester
-And the terminal returns the following error.
+    Run the following commands in your terminal.
 
-zsh: permission denied: ./semester
+    ```bash
+    ./semester
+    ```
+
+    And the terminal returns the following error.
+
+    ```bash 
+    zsh: permission denied: ./semester
+    ```
+    
 Run the command by explicitly starting the sh interpreter, and giving it the file semester as the first argument, i.e. sh semester. Why does this work, while ./semester didn't?
 
 Solution: Because the current user of the terminal does not have executable permissions to this file. However the current user has permssions to use sh command to run the file and the filename is used as an argument of sh command.
