@@ -3,7 +3,7 @@
 ###
 1. **Create a new directory called missing under /tmp.**
 
-        Solution: We can use mkdir ```/tmp/missing``` 
+    Solution: We can use mkdir ```/tmp/missing``` 
 
 2. **Look up the touch program. The man program is your friend.**
 
