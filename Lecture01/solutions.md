@@ -31,7 +31,7 @@
     ```bash
     #!/bin/sh
     curl --head --silent https://missing.csail.mit.edu
-    The first line might be tricky to get working. Its helpful to know that # starts a comment in Bash, and ! has a special meaning even within double-quoted (") strings. Bash treats single-quoted strings (') differently: they will do the trick in this case. See the Bash quoting manual page for more information.
+    The first line might be tricky to get working. Its helpful to know that ```#``` starts a comment in Bash, and ```!``` has a special meaning even within double-quoted (```"```) strings. Bash treats single-quoted strings (```'```) differently: they will do the trick in this case. See the Bash quoting manual page for more information.
     ```
 
     Solution:
