@@ -31,7 +31,7 @@
     ```bash
     #!/bin/sh
     curl --head --silent https://missing.csail.mit.edu
-    The first line might be tricky to get working. It's helpful to know that # starts a comment in Bash, and ! has a special meaning even within double-quoted (") strings. Bash treats single-quoted strings (') differently: they will do the trick in this case. See the Bash quoting manual page for more information.
+    The first line might be tricky to get working. Its helpful to know that # starts a comment in Bash, and ! has a special meaning even within double-quoted (") strings. Bash treats single-quoted strings (') differently: they will do the trick in this case. See the Bash quoting manual page for more information.
     ```
 
     Solution:
@@ -58,7 +58,7 @@
     ```bash 
     zsh: permission denied: ./semester
     ```
-    
+
 Run the command by explicitly starting the sh interpreter, and giving it the file semester as the first argument, i.e. sh semester. Why does this work, while ./semester didn't?
 
 Solution: Because the current user of the terminal does not have executable permissions to this file. However the current user has permssions to use sh command to run the file and the filename is used as an argument of sh command.
