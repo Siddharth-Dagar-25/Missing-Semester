@@ -7,20 +7,24 @@
 
 2. **Look up the touch program. The man program is your friend.**
 
-Solution: We can use ```man touch``` or ```tldr touch```.
+    Solution: We can use ```man touch``` or ```tldr touch```.
 
-Use touch to create a new file called semester in missing.
+3. **Use touch to create a new file called semester in missing.**
 
-Solution:
+    Solution:
 
-Run the following commands in your terminal.
+    Run the following commands in your terminal.
 
-cd /tmp/missing
-touch semester
-Or using a single comand.
+    ```bash
+    cd /tmp/missing
+    touch semester
 
-touch /tmp/missing/semester
-Write the following into that file, one line at a time:
+    Or using a single comand.
+
+    ```bash
+    touch /tmp/missing/semester
+
+4. **Write the following into that file, one line at a time:**
 
 #!/bin/sh
 curl --head --silent https://missing.csail.mit.edu
